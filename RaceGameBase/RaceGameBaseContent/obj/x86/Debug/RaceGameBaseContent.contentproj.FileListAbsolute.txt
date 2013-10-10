@@ -1,0 +1,4 @@
+C:\Users\niels\Documents\Visual Studio 2010\Projects\RaceGameBase\RaceGameBase\RaceGameBaseContent\obj\x86\Debug\RaceGameBaseContent.contentprojResolveAssemblyReference.cache
+C:\Users\Eele\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBaseContent\obj\x86\Debug\RaceGameBaseContent.contentprojResolveAssemblyReference.cache
+C:\Users\Vincent\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBaseContent\obj\x86\Debug\RaceGameBaseContent.contentprojResolveAssemblyReference.cache
+C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBaseContent\obj\x86\Debug\RaceGameBaseContent.contentprojResolveAssemblyReference.cache

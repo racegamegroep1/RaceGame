@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>SpriteFont.spritefont</Source>
+      <Name>SpriteFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\SpriteFont.xnb</Output>
+      <Time>2013-10-09T16:37:49.3363207+02:00</Time>
+    </Item>
+    <Item>
+      <Source>filler.png</Source>
+      <Name>filler</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\filler.xnb</Output>
+      <Time>2013-10-09T16:19:40+02:00</Time>
+    </Item>
+    <Item>
+      <Source>background.png</Source>
+      <Name>background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\background.xnb</Output>
+      <Time>2013-10-09T16:48:34+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\back.png</Source>
+      <Name>Menu\back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\back.xnb</Output>
+      <Time>2013-10-10T12:04:03+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\back_h.png</Source>
+      <Name>Menu\back_h</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\back_h.xnb</Output>
+      <Time>2013-10-10T12:04:03+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\credits.png</Source>
+      <Name>Menu\credits</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\credits.xnb</Output>
+      <Time>2013-10-10T12:04:03+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\credits_h.png</Source>
+      <Name>Menu\credits_h</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\credits_h.xnb</Output>
+      <Time>2013-10-10T12:04:03+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\options.png</Source>
+      <Name>Menu\options</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\options.xnb</Output>
+      <Time>2013-10-10T12:04:03+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\options_h.png</Source>
+      <Name>Menu\options_h</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\options_h.xnb</Output>
+      <Time>2013-10-10T12:04:03+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\play.png</Source>
+      <Name>Menu\play</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\play.xnb</Output>
+      <Time>2013-10-10T12:04:03+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\play_h.png</Source>
+      <Name>Menu\play_h</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\play_h.xnb</Output>
+      <Time>2013-10-10T12:04:03+02:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBaseContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBaseContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-10-08T10:29:13.9063259+02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
