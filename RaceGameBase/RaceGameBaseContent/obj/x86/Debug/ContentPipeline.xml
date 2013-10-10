@@ -7,7 +7,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\SpriteFont.xnb</Output>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\SpriteFont.xnb</Output>
       <Time>2013-10-09T16:37:49.3363207+02:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\filler.xnb</Output>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\filler.xnb</Output>
       <Time>2013-10-09T16:19:40+02:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\background.xnb</Output>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\background.xnb</Output>
       <Time>2013-10-09T16:48:34+02:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\back.xnb</Output>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\back.xnb</Output>
       <Time>2013-10-10T12:04:03+02:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\back_h.xnb</Output>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\back_h.xnb</Output>
       <Time>2013-10-10T12:04:03+02:00</Time>
     </Item>
     <Item>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\credits.xnb</Output>
-      <Time>2013-10-10T12:04:03+02:00</Time>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\credits.xnb</Output>
+      <Time>2013-10-10T22:56:57.1030838+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\credits_h.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\credits_h.xnb</Output>
-      <Time>2013-10-10T12:04:03+02:00</Time>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\credits_h.xnb</Output>
+      <Time>2013-10-10T22:56:57.118704+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\options.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\options.xnb</Output>
-      <Time>2013-10-10T12:04:03+02:00</Time>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\options.xnb</Output>
+      <Time>2013-10-10T22:56:57.118704+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\options_h.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\options_h.xnb</Output>
-      <Time>2013-10-10T12:04:03+02:00</Time>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\options_h.xnb</Output>
+      <Time>2013-10-10T22:56:57.118704+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\play.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\play.xnb</Output>
-      <Time>2013-10-10T12:04:03+02:00</Time>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\play.xnb</Output>
+      <Time>2013-10-10T22:56:57.118704+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\play_h.png</Source>
@@ -97,8 +97,27 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\play_h.xnb</Output>
-      <Time>2013-10-10T12:04:03+02:00</Time>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\play_h.xnb</Output>
+      <Time>2013-10-10T22:56:57.118704+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\background.wmv</Source>
+      <Name>Menu\background</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\background.xnb</Output>
+      <Extra>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\background.wmv</Extra>
+      <Time>2013-10-10T20:57:33.8256601+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\logo.png</Source>
+      <Name>Menu\logo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\logo.xnb</Output>
+      <Time>2013-10-10T22:46:23.5018769+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -106,10 +125,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBaseContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBaseContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBaseContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBaseContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

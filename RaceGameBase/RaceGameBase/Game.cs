@@ -20,12 +20,20 @@ namespace RaceGameBase
         public static SpriteFont spriteFont;
         public static Texture2D filler;
         public static Texture2D background;
+        public static Texture2D logo;
+        public static Texture2D back;
+        public static Texture2D backHover;
+        public static Rectangle backRectangle;
+
+        public static VideoPlayer player;
+        public static Video video;
 
         public Menu menu;
         public Options options;
         public Lobby lobby;
         public Credits credits;
 
+        
         public Game()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -61,6 +69,15 @@ namespace RaceGameBase
             spriteFont = Content.Load<SpriteFont>("SpriteFont");
             filler = Content.Load<Texture2D>("filler");
             background = Content.Load<Texture2D>("background");
+            logo = Content.Load<Texture2D>("Menu/logo");
+            back = Content.Load<Texture2D>("Menu/back");
+            backHover = Content.Load<Texture2D>("Menu/back_h");
+            backRectangle = new Rectangle(10, Game.graphics.PreferredBackBufferHeight - back.Height - 20, back.Width, back.Height);
+
+            player = new VideoPlayer();
+            video = Content.Load<Video>("Menu/background");
+            player.Play(video);
+            player.IsLooped = true;
 
             switch (gameState)
             {
@@ -77,6 +94,7 @@ namespace RaceGameBase
 
         protected override void Update(GameTime gameTime)
         {
+            
             switch (gameState)
             {
                 case GameState.Menu:

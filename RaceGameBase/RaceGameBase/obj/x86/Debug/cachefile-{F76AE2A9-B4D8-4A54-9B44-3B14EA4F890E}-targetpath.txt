@@ -9,3 +9,6 @@ Content\Menu\options.xnb
 Content\Menu\options_h.xnb
 Content\Menu\play.xnb
 Content\Menu\play_h.xnb
+Content\Menu\background.xnb
+Content\Menu\background.wmv
+Content\Menu\logo.xnb

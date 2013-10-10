@@ -42,3 +42,23 @@ C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\
 C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\options_h.xnb
 C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\play.xnb
 C:\Users\niels\Dropbox\Race Game Groep 1\RaceGameBase\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\play_h.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\SpriteFont.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\filler.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\background.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\back.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\back_h.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\credits.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\credits_h.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\options.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\options_h.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\play.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\play_h.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\RaceGameBase.exe
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\RaceGameBase.pdb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\obj\x86\Debug\RaceGameBase.csprojResolveAssemblyReference.cache
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\obj\x86\Debug\RaceGameBase.exe
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\obj\x86\Debug\RaceGameBase.pdb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\background.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\background.wmv
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\logo.xnb

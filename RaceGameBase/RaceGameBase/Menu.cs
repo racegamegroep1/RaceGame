@@ -34,14 +34,15 @@ namespace RaceGameBase
             {
                     MenuImages[i] = Content.Load<Texture2D>("Menu/" + MenuItems[i].ToLower());
                     MenuHoverImages[i] = Content.Load<Texture2D>("Menu/" + MenuItems[i].ToLower() + "_h");
-                    MenuRectangles[i] = new Rectangle((Game.graphics.PreferredBackBufferWidth / 2) - (MenuImages[i].Width / 2), 100 + (i * 100), MenuImages[i].Width, MenuImages[i].Height);
+                    MenuRectangles[i] = new Rectangle(120, 250 + (i  * MenuImages[i].Height) + i, MenuImages[i].Width, MenuImages[i].Height);
             }
         }
 
         public void Draw()
         {
             Game.spriteBatch.Begin();
-            Game.spriteBatch.Draw(Game.background, new Rectangle(0, 0, Game.graphics.PreferredBackBufferWidth, Game.graphics.PreferredBackBufferHeight), Color.White);
+            Game.spriteBatch.Draw(Game.player.GetTexture(), new Rectangle(0, 0, Game.graphics.PreferredBackBufferWidth, Game.graphics.PreferredBackBufferHeight), Color.White);
+            Game.spriteBatch.Draw(Game.logo, new Rectangle(0, 0, Game.logo.Width, Game.logo.Height), Color.White);
             for (int i = 0; i < MenuItems.Length; i++)
             {
                 if(MenuHover[i] == false)
