@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Content;
+using System.Diagnostics;
 
 namespace RaceGameBase
 {
@@ -74,6 +75,7 @@ namespace RaceGameBase
                             case 0: ClickEvent(this, new GameStateEventArgs(GameState.Lobby)); break;
                             case 1: ClickEvent(this, new GameStateEventArgs(GameState.Options)); break;
                             case 2: ClickEvent(this, new GameStateEventArgs(GameState.Credits)); break;
+                            case 3: Process.GetCurrentProcess().Kill(); break;
                         }
                     }
                     

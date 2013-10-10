@@ -119,6 +119,24 @@
       <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\logo.xnb</Output>
       <Time>2013-10-10T22:46:23.5018769+02:00</Time>
     </Item>
+    <Item>
+      <Source>Menu\exit.png</Source>
+      <Name>Menu\exit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\exit.xnb</Output>
+      <Time>2013-10-10T23:28:10.5253233+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\exit_h.png</Source>
+      <Name>Menu\exit_h</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\exit_h.xnb</Output>
+      <Time>2013-10-10T23:28:10.5253233+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

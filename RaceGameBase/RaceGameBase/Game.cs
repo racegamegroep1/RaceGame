@@ -48,7 +48,7 @@ namespace RaceGameBase
 
             this.IsMouseVisible = true;
 
-            menu = new Menu(new string[] {"Play","Options", "Credits"});
+            menu = new Menu(new string[] {"Play","Options","Credits","Exit"});
             menu.ClickEvent += new EventHandler<GameStateEventArgs>(Menu_ClickEvent);
 
             options = new Options();
