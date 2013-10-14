@@ -137,6 +137,70 @@
       <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\optionpanel.xnb</Output>
       <Time>2013-10-11T12:44:50.6528841+02:00</Time>
     </Item>
+    <Item>
+      <Source>Menu\lobby.mp3</Source>
+      <Name>Menu\lobby</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\lobby.xnb</Output>
+      <Extra>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\lobby.wma</Extra>
+      <Time>2013-10-14T12:40:55.4845495+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\check.png</Source>
+      <Name>Menu\check</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\check.xnb</Output>
+      <Time>2013-10-14T12:51:07.651163+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\check_c.png</Source>
+      <Name>Menu\check_c</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\check_c.xnb</Output>
+      <Time>2013-10-14T13:28:20.4327412+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\check_h.png</Source>
+      <Name>Menu\check_h</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\check_h.xnb</Output>
+      <Time>2013-10-14T13:25:51.1037211+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\textbox.png</Source>
+      <Name>Menu\textbox</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\textbox.xnb</Output>
+      <Time>2013-10-14T13:45:39.1887847+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\textbox_h.png</Source>
+      <Name>Menu\textbox_h</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\textbox_h.xnb</Output>
+      <Time>2013-10-14T13:45:39.1897845+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SmallFont.spritefont</Source>
+      <Name>SmallFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\SmallFont.xnb</Output>
+      <Time>2013-10-14T13:55:39.5323227+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

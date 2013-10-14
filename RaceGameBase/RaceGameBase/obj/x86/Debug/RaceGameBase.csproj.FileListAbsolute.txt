@@ -64,3 +64,11 @@ C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug
 C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\exit.xnb
 C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\exit_h.xnb
 C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\optionpanel.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\lobby.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\lobby.wma
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\check.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\check_c.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\check_h.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\textbox.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\textbox_h.xnb
+C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\SmallFont.xnb

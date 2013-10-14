@@ -14,3 +14,11 @@ Content\Menu\logo.xnb
 Content\Menu\exit.xnb
 Content\Menu\exit_h.xnb
 Content\Menu\optionpanel.xnb
+Content\Menu\lobby.xnb
+Content\Menu\lobby.wma
+Content\Menu\check.xnb
+Content\Menu\check_c.xnb
+Content\Menu\check_h.xnb
+Content\Menu\textbox.xnb
+Content\Menu\textbox_h.xnb
+Content\SmallFont.xnb

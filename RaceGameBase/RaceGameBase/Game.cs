@@ -28,6 +28,7 @@ namespace RaceGameBase
 
         public static VideoPlayer player;
         public static Video video;
+        public static Song lobbySong;
 
         public Menu menu;
         public Options options;
@@ -49,7 +50,7 @@ namespace RaceGameBase
             graphics.ApplyChanges();
 
             this.IsMouseVisible = true;
-            
+            ApplySettings();
 
             menu = new Menu(new string[] {"Play","Options","Credits","Exit"});
             menu.ClickEvent += new EventHandler<GameStateEventArgs>(Menu_ClickEvent);
@@ -66,6 +67,12 @@ namespace RaceGameBase
             base.Initialize();
         }
 
+        private void ApplySettings()
+        {
+            if (Convert.ToBoolean(Settings.GetKey("Fullscreen")) == true)
+                Game.graphics.ToggleFullScreen();
+        }
+
         protected override void LoadContent()
         {
             
@@ -76,8 +83,17 @@ namespace RaceGameBase
             back = Content.Load<Texture2D>("Menu/back");
             backHover = Content.Load<Texture2D>("Menu/back_h");
             backRectangle = new Rectangle(10, Game.graphics.PreferredBackBufferHeight - back.Height - 20, back.Width, back.Height);
+            lobbySong = Content.Load<Song>("Menu/lobby");
+
+            MediaPlayer.Play(lobbySong);
+
+
+            if (Convert.ToBoolean(Settings.GetKey("Sound")) == false)
+                MediaPlayer.Pause();
 
             player = new VideoPlayer();
+            player.IsMuted = true;
+
             video = Content.Load<Video>("Menu/background");
             player.Play(video);
             player.IsLooped = true;
