@@ -21,6 +21,7 @@ namespace RaceGameBase
         {
             Game.spriteBatch.Begin();
             Game.spriteBatch.Draw(Game.player.GetTexture(), new Rectangle(0, 0, Game.graphics.PreferredBackBufferWidth, Game.graphics.PreferredBackBufferHeight), Color.White);
+            Game.spriteBatch.Draw(Game.logo, new Rectangle(0, 0, Game.logo.Width, Game.logo.Height), Color.White);
             Game.spriteBatch.DrawString(Game.spriteFont, "Lobby", new Vector2(10, 10), Color.White);
             Game.spriteBatch.End();
         }

@@ -27,9 +27,10 @@ namespace RaceGameBase
             MenuHoverImages = new Texture2D[menuItems.Length];
             MenuRectangles = new Rectangle[menuItems.Length];
             MenuHover = new bool[MenuItems.Length];
+            Load(Game.contentManager);
         }
 
-        public void Load(ContentManager Content)
+        private void Load(ContentManager Content)
         {            
             for (int i = 0; i < MenuItems.Length; i++)
             {

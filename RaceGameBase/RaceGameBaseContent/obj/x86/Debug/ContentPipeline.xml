@@ -20,22 +20,13 @@
       <Time>2013-10-09T16:19:40+02:00</Time>
     </Item>
     <Item>
-      <Source>background.png</Source>
-      <Name>background</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\background.xnb</Output>
-      <Time>2013-10-09T16:48:34+02:00</Time>
-    </Item>
-    <Item>
       <Source>Menu\back.png</Source>
       <Name>Menu\back</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\back.xnb</Output>
-      <Time>2013-10-10T12:04:03+02:00</Time>
+      <Time>2013-10-11T11:04:23.7605468+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\back_h.png</Source>
@@ -44,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\back_h.xnb</Output>
-      <Time>2013-10-10T12:04:03+02:00</Time>
+      <Time>2013-10-11T11:04:23.776167+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\credits.png</Source>
@@ -136,6 +127,15 @@
       <Options>None</Options>
       <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\exit_h.xnb</Output>
       <Time>2013-10-10T23:28:10.5253233+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\optionpanel.png</Source>
+      <Name>Menu\optionpanel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\optionpanel.xnb</Output>
+      <Time>2013-10-11T12:44:50.6528841+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

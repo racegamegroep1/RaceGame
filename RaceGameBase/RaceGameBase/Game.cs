@@ -15,6 +15,7 @@ namespace RaceGameBase
     {
         public static GraphicsDeviceManager graphics;
         public static SpriteBatch spriteBatch;
+        public static ContentManager contentManager;
 
         public static GameState gameState = GameState.Menu;
         public static SpriteFont spriteFont;
@@ -37,7 +38,8 @@ namespace RaceGameBase
         public Game()
         {
             graphics = new GraphicsDeviceManager(this);
-            Content.RootDirectory = "Content";            
+            Content.RootDirectory = "Content";
+            contentManager = Content;
         }
 
         protected override void Initialize()
@@ -47,6 +49,7 @@ namespace RaceGameBase
             graphics.ApplyChanges();
 
             this.IsMouseVisible = true;
+            
 
             menu = new Menu(new string[] {"Play","Options","Credits","Exit"});
             menu.ClickEvent += new EventHandler<GameStateEventArgs>(Menu_ClickEvent);
@@ -65,10 +68,10 @@ namespace RaceGameBase
 
         protected override void LoadContent()
         {
+            
             spriteBatch = new SpriteBatch(GraphicsDevice);
             spriteFont = Content.Load<SpriteFont>("SpriteFont");
             filler = Content.Load<Texture2D>("filler");
-            background = Content.Load<Texture2D>("background");
             logo = Content.Load<Texture2D>("Menu/logo");
             back = Content.Load<Texture2D>("Menu/back");
             backHover = Content.Load<Texture2D>("Menu/back_h");
@@ -79,12 +82,6 @@ namespace RaceGameBase
             player.Play(video);
             player.IsLooped = true;
 
-            switch (gameState)
-            {
-                case GameState.Menu:
-                    menu.Load(Content);
-                    break;
-            }
         }
 
         protected override void UnloadContent()

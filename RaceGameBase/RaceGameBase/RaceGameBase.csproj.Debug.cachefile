@@ -1,6 +1,5 @@
 Content\SpriteFont.xnb
 Content\filler.xnb
-Content\background.xnb
 Content\Menu\back.xnb
 Content\Menu\back_h.xnb
 Content\Menu\credits.xnb
@@ -13,4 +12,5 @@ Content\Menu\background.xnb
 Content\Menu\logo.xnb
 Content\Menu\exit.xnb
 Content\Menu\exit_h.xnb
+Content\Menu\optionpanel.xnb
 Content\Menu\background.wmv
