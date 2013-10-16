@@ -12,13 +12,16 @@ namespace RaceGameBase
 {
     public class Menu
     {
+
+        public event EventHandler<RaceGameBase.GameStateEventArgs> ClickEvent;
+
         private string[] MenuItems;
         private Texture2D[] MenuImages;
         private Texture2D[] MenuHoverImages;
         private Rectangle[] MenuRectangles;
         private bool[] MenuHover;
-
-        public event EventHandler<RaceGameBase.GameStateEventArgs> ClickEvent;
+        private MouseState currentMouseState;
+        private MouseState lastMouseState;
 
         public Menu(string[] menuItems)
         {
@@ -43,8 +46,8 @@ namespace RaceGameBase
         public void Draw()
         {
             Game.spriteBatch.Begin();
-            Game.spriteBatch.Draw(Game.player.GetTexture(), new Rectangle(0, 0, Game.graphics.PreferredBackBufferWidth, Game.graphics.PreferredBackBufferHeight), Color.White);
-            Game.spriteBatch.Draw(Game.logo, new Rectangle(0, 0, Game.logo.Width, Game.logo.Height), Color.White);
+            DrawBasics();
+
             for (int i = 0; i < MenuItems.Length; i++)
             {
                 if(MenuHover[i] == false)
@@ -56,8 +59,15 @@ namespace RaceGameBase
             Game.spriteBatch.End();
         }
 
+        public static void DrawBasics()
+        {
+            Game.spriteBatch.Draw(Game.player.GetTexture(), new Rectangle(0, 0, Game.graphics.PreferredBackBufferWidth, Game.graphics.PreferredBackBufferHeight), Color.White);
+            Game.spriteBatch.Draw(Game.logo, new Rectangle(0, 0, Game.logo.Width, Game.logo.Height), Color.White);
+        }
+
         public void Update()
         {
+            currentMouseState = Mouse.GetState();
             for (int i = 0; i < MenuItems.Length; i++)
             {
                 if (MenuRectangles[i].Intersects(new Rectangle(Mouse.GetState().X, Mouse.GetState().Y, 1, 1)))
@@ -65,7 +75,7 @@ namespace RaceGameBase
                 else
                     MenuHover[i] = false;
             }
-            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
+            if (lastMouseState.LeftButton == ButtonState.Pressed && currentMouseState.LeftButton == ButtonState.Released)
             {
                 for (int i = 0; i < MenuItems.Length; i++)
                 {
@@ -82,7 +92,7 @@ namespace RaceGameBase
                     
                 }
             }
-            
+            lastMouseState = currentMouseState;
         }
     }
 }

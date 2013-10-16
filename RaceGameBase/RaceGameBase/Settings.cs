@@ -8,6 +8,11 @@ using Microsoft.Xna.Framework.Input;
 
 namespace RaceGameBase
 {
+    /* 
+     * Dit is de Settings class
+     * Deze class word gebuikt om settings op te slaan in het registry
+     */
+
     public class Settings
     {
         public static RegistryKey key;

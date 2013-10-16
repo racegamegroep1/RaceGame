@@ -107,7 +107,6 @@ namespace RaceGameBase
 
         protected override void Update(GameTime gameTime)
         {
-            
             switch (gameState)
             {
                 case GameState.Menu:

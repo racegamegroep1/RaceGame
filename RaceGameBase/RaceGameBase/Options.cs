@@ -14,7 +14,9 @@ namespace RaceGameBase
     {
         public event EventHandler ReturnEvent;
 
-        private SpriteFont smallFont;
+        public static SpriteFont smallFont;
+        public static Texture2D textbox;
+        public static Texture2D textboxHover;
 
         private Rectangle selectFullscreen;
         private int fullscreenState = 0;
@@ -39,9 +41,6 @@ namespace RaceGameBase
         private Texture2D checkHover;
         private Texture2D checkChecked;
 
-        private Texture2D textbox;
-        private Texture2D textboxHover;
-
         private bool selected = false;
         private Rectangle player1LeftRectangle;
         private Rectangle player1RightRectangle;
@@ -54,6 +53,18 @@ namespace RaceGameBase
         private Rectangle player2GasRectangle;
         private Rectangle player2BrakeRectangle;
         private Rectangle player2NitroRectangle;
+
+        private KeyBox player1LeftKeyBox;
+        private KeyBox player1RightKeyBox;
+        private KeyBox player1GasKeyBox;
+        private KeyBox player1BrakeKeyBox;
+        private KeyBox player1NitroKeyBox;
+
+        private KeyBox player2LeftKeyBox;
+        private KeyBox player2RightKeyBox;
+        private KeyBox player2GasKeyBox;
+        private KeyBox player2BrakeKeyBox;
+        private KeyBox player2NitroKeyBox;
 
         public Options()
         {
@@ -73,6 +84,18 @@ namespace RaceGameBase
             player2GasRectangle = new Rectangle(1050, 325, 80, 20);
             player2BrakeRectangle = new Rectangle(1050, 355, 80, 20);
             player2NitroRectangle = new Rectangle(1050, 385, 80, 20);
+
+            player1LeftKeyBox = new KeyBox(player1LeftRectangle, "P1left");
+            player1RightKeyBox = new KeyBox(player1RightRectangle, "P1right");
+            player1GasKeyBox = new KeyBox(player1GasRectangle, "P1gas");
+            player1BrakeKeyBox = new KeyBox(player1BrakeRectangle, "P1brake");
+            player1NitroKeyBox = new KeyBox(player1NitroRectangle, "P1nitro");
+
+            player2LeftKeyBox = new KeyBox(player2LeftRectangle, "P2left");
+            player2RightKeyBox = new KeyBox(player2RightRectangle, "P2right");
+            player2GasKeyBox = new KeyBox(player2GasRectangle, "P2gas");
+            player2BrakeKeyBox = new KeyBox(player2BrakeRectangle, "P2brake");
+            player2NitroKeyBox = new KeyBox(player2NitroRectangle, "P2nitro");
 
             Load(Game.contentManager);
         }
@@ -99,6 +122,7 @@ namespace RaceGameBase
         {
             currentMouseState = Mouse.GetState();
 
+            //checkt als backbutton wordt ingedrukt
             if (backButtonRectangle.Intersects(new Rectangle(Mouse.GetState().X, Mouse.GetState().Y, 1, 1)))
             {
                 backButtonHover = true;
@@ -108,6 +132,7 @@ namespace RaceGameBase
             else
                 backButtonHover = false;
 
+            //fullscreen check
             if (selectFullscreen.Intersects(new Rectangle(Mouse.GetState().X, Mouse.GetState().Y, 1, 1)))
             {
                 fullscreenState = 1;
@@ -126,6 +151,7 @@ namespace RaceGameBase
                     fullscreenState = 0;
             }
 
+            //sound check
             if (selectSound.Intersects(new Rectangle(Mouse.GetState().X, Mouse.GetState().Y, 1, 1)))
             {
                 soundState = 1;
@@ -157,6 +183,20 @@ namespace RaceGameBase
 
             }
 
+            //roep de update methode voor de Keyboxen aan
+            player1LeftKeyBox.Update();
+            player1RightKeyBox.Update();
+            player1GasKeyBox.Update();
+            player1BrakeKeyBox.Update();
+            player1NitroKeyBox.Update();
+
+            player2LeftKeyBox.Update();
+            player2RightKeyBox.Update();
+            player2GasKeyBox.Update();
+            player2BrakeKeyBox.Update();
+            player2NitroKeyBox.Update();
+
+            //ga terug naar menu als escape wordt ingedrukt
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 ReturnEvent(this, new EventArgs());
 
@@ -166,23 +206,26 @@ namespace RaceGameBase
         public void Draw()
         {
             Game.spriteBatch.Begin();
-            Game.spriteBatch.Draw(Game.player.GetTexture(), new Rectangle(0,0, Game.graphics.PreferredBackBufferWidth, Game.graphics.PreferredBackBufferHeight), Color.White);
-            Game.spriteBatch.Draw(Game.logo, new Rectangle(0, 0, Game.logo.Width, Game.logo.Height), Color.White);
+            
+            //teken achtergrond, logo, panel
+            Menu.DrawBasics();
             Game.spriteBatch.Draw(optionPanel, new Rectangle(backButtonRectangle.X + backButtonRectangle.Width + 1, 35, optionPanel.Width, optionPanel.Height), Color.White);
 
+            //teken back button
             if(backButtonHover == false)
                 Game.spriteBatch.Draw(backButtonImage, backButtonRectangle, Color.White);
             else
                 Game.spriteBatch.Draw(backButtonHoverImage, backButtonRectangle, Color.White);
 
+            //teken fullscreen checkbox
             if (fullscreenState == 0)
                 Game.spriteBatch.Draw(check, selectFullscreen, Color.White);
             else if (fullscreenState == 1)
                 Game.spriteBatch.Draw(checkHover, selectFullscreen, Color.White);
             else
                 Game.spriteBatch.Draw(checkChecked, selectFullscreen, Color.White);
-
-
+            
+            //teken sound checkbox
             if (soundState == 0)
                 Game.spriteBatch.Draw(check, selectSound, Color.White);
             else if (soundState == 1)
@@ -193,27 +236,18 @@ namespace RaceGameBase
             Game.spriteBatch.Draw(checkHover, selectMusic, Color.White);
             Game.spriteBatch.Draw(checkHover, selectEffects, Color.White);
 
-            Game.spriteBatch.Draw(textbox, player1LeftRectangle, Color.White);
-            Game.spriteBatch.DrawString(smallFont, "Left", new Vector2(player1LeftRectangle.X + 3, player1LeftRectangle.Y + 2), Color.Black);
-            Game.spriteBatch.Draw(textbox, player1RightRectangle, Color.White);
-            Game.spriteBatch.DrawString(smallFont, "Right", new Vector2(player1RightRectangle.X + 3, player1RightRectangle.Y + 2), Color.Black);
-            Game.spriteBatch.Draw(textbox, player1GasRectangle, Color.White);
-            Game.spriteBatch.DrawString(smallFont, "Up", new Vector2(player1GasRectangle.X + 3, player1GasRectangle.Y + 2), Color.Black);
-            Game.spriteBatch.Draw(textbox, player1BrakeRectangle, Color.White);
-            Game.spriteBatch.DrawString(smallFont, "Down", new Vector2(player1BrakeRectangle.X + 3, player1BrakeRectangle.Y + 2), Color.Black);
-            Game.spriteBatch.Draw(textbox, player1NitroRectangle, Color.White);
-            Game.spriteBatch.DrawString(smallFont, "R Shift", new Vector2(player1NitroRectangle.X + 3, player1NitroRectangle.Y + 2), Color.Black);
+            //Teken de KeyBoxes
+            player1LeftKeyBox.Draw();
+            player1RightKeyBox.Draw();
+            player1GasKeyBox.Draw();
+            player1BrakeKeyBox.Draw();
+            player1NitroKeyBox.Draw();
 
-            Game.spriteBatch.Draw(textbox, player2LeftRectangle, Color.White);
-            Game.spriteBatch.DrawString(smallFont, "A", new Vector2(player2LeftRectangle.X + 3, player2LeftRectangle.Y + 2), Color.Black);
-            Game.spriteBatch.Draw(textbox, player2RightRectangle, Color.White);
-            Game.spriteBatch.DrawString(smallFont, "D", new Vector2(player2RightRectangle.X + 3, player2RightRectangle.Y + 2), Color.Black);
-            Game.spriteBatch.Draw(textbox, player2GasRectangle, Color.White);
-            Game.spriteBatch.DrawString(smallFont, "W", new Vector2(player2GasRectangle.X + 3, player2GasRectangle.Y + 2), Color.Black);
-            Game.spriteBatch.Draw(textbox, player2BrakeRectangle, Color.White);
-            Game.spriteBatch.DrawString(smallFont, "S", new Vector2(player2BrakeRectangle.X + 3, player2BrakeRectangle.Y + 2), Color.Black);
-            Game.spriteBatch.Draw(textbox, player2NitroRectangle, Color.White);
-            Game.spriteBatch.DrawString(smallFont, "L  Shift", new Vector2(player2NitroRectangle.X + 3, player2NitroRectangle.Y + 2), Color.Black);
+            player2LeftKeyBox.Draw();
+            player2RightKeyBox.Draw();
+            player2GasKeyBox.Draw();
+            player2BrakeKeyBox.Draw();
+            player2NitroKeyBox.Draw();
 
             Game.spriteBatch.End();
         }

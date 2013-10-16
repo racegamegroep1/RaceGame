@@ -5,6 +5,7 @@ using System.Text;
 
 namespace RaceGameBase
 {
+    //De states van de game
     public enum GameState
     {
         Menu,
@@ -14,6 +15,7 @@ namespace RaceGameBase
         Game
     }
 
+    //Eventargs zodat de gamestate kan worden veranderd na een event
     public class GameStateEventArgs : EventArgs
     {
         private GameState gameState;
