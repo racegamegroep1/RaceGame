@@ -16,6 +16,8 @@ namespace RaceGameBase
         public static GraphicsDeviceManager graphics;
         public static SpriteBatch spriteBatch;
         public static ContentManager contentManager;
+        public static double totalMiliseconds;
+        public static TimeSpan totalTimeSpan;
 
         public static GameState gameState = GameState.Menu;
         public static SpriteFont spriteFont;
@@ -34,7 +36,7 @@ namespace RaceGameBase
         public Options options;
         public Lobby lobby;
         public Credits credits;
-
+        public Map map;
         
         public Game()
         {
@@ -52,6 +54,8 @@ namespace RaceGameBase
             this.IsMouseVisible = true;
             ApplySettings();
 
+            totalMiliseconds = 0;
+
             menu = new Menu(new string[] {"Play","Options","Credits","Exit"});
             menu.ClickEvent += new EventHandler<GameStateEventArgs>(Menu_ClickEvent);
 
@@ -60,10 +64,13 @@ namespace RaceGameBase
 
             lobby = new Lobby();
             lobby.ReturnEvent += new EventHandler(ReturnEvent);
+            lobby.GameStateEvent += new EventHandler<GameStateEventArgs>(lobby_GameStateEvent);
 
             credits = new Credits();
             credits.ReturnEvent += new EventHandler(ReturnEvent);
 
+            map = new Map(Player.Players);
+            map.returnEvent += new EventHandler(map_returnEvent);
             base.Initialize();
         }
 
@@ -102,11 +109,14 @@ namespace RaceGameBase
 
         protected override void UnloadContent()
         {
-
+            
         }
 
         protected override void Update(GameTime gameTime)
         {
+            totalMiliseconds = gameTime.TotalGameTime.TotalMilliseconds;
+            totalTimeSpan = gameTime.TotalGameTime;
+
             switch (gameState)
             {
                 case GameState.Menu:
@@ -120,6 +130,9 @@ namespace RaceGameBase
                     break;
                 case GameState.Credits:
                     credits.Update();
+                    break;
+                case GameState.Game:
+                    map.Update();
                     break;
             }
 
@@ -144,6 +157,9 @@ namespace RaceGameBase
                 case GameState.Credits:
                     credits.Draw();
                     break;
+                case GameState.Game:
+                    map.Draw();
+                    break;
             }
 
             base.Draw(gameTime);
@@ -157,6 +173,18 @@ namespace RaceGameBase
         public void ReturnEvent(object sender, EventArgs e)
         {
             gameState = GameState.Menu;
+        }
+
+        void lobby_GameStateEvent(object sender, GameStateEventArgs e)
+        {
+            gameState = e.GetGameState();
+        }
+
+        void map_returnEvent(object sender, EventArgs e)
+        {
+            gameState = GameState.Menu;
+            Player.Players.Clear();
+            lobby.ReorderRectangles();
         }
     }
 

@@ -18,14 +18,14 @@ namespace RaceGameBase
     //Eventargs zodat de gamestate kan worden veranderd na een event
     public class GameStateEventArgs : EventArgs
     {
-        private GameState gameState;
+        private GameState _gameState;
         public GameStateEventArgs(GameState gamestate)
         {
-            this.gameState = gamestate;
+            this._gameState = gamestate;
         }
         public GameState GetGameState()
         {
-            return gameState;
+            return _gameState;
         }
     }
 }

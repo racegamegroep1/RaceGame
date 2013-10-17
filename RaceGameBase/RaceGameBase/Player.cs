@@ -8,29 +8,37 @@ namespace RaceGameBase
     public class Player
     {
         public static List<Player> Players { get; set; }
-
         public string Name { get; set; }
         public Car CarObject { get; set; }
         public bool UseKeyboard { get; set; }
         public bool IsAI { get; set; }
         public int InputID { get; set; }
 
-        public Player(string name, Car car, bool keyboard, int inputid)
+        public Player(string name, Car car, int type, int inputid)
         {
             Name = name;
             CarObject = car;
-            UseKeyboard = keyboard;
+
+            if (type == 1)
+                UseKeyboard = true;
+            else if (type == 0)
+                UseKeyboard = false;
+            else
+            {
+                IsAI = true;
+            }
+
             InputID = inputid;
         }
 
         //type: 1 = keyboard, 2 = xbox, 3 = ai
-        public int GetInputId(int type)
+        public static int GetInputId(List<Player> players, int type)
         {
             int keyboard = 1;
             int xbox = 1;
             int ai = 1;
 
-            foreach (Player p in Players)
+            foreach (Player p in players)
             {
                 if (p.UseKeyboard)
                     keyboard++;
@@ -51,11 +59,6 @@ namespace RaceGameBase
 
                 default: return 0;
             }
-        }
-
-        public void DeletePlayer(int index)
-        {
-            Players.RemoveAt(index);
         }
     }
 }

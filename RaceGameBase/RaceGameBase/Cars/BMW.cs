@@ -12,7 +12,7 @@ namespace RaceGameBase
         {
             maxSpeed = 230;
             handling = 5;
-            texture = Game.contentManager.Load<Texture2D>("");
+            //texture = Game.contentManager.Load<Texture2D>("");
         }
     }
 }

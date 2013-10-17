@@ -18,16 +18,16 @@ namespace RaceGameBase
         public static Texture2D textbox;
         public static Texture2D textboxHover;
 
-        private Rectangle selectFullscreen;
-        private int fullscreenState = 0;
+        private Rectangle _selectFullscreen;
+        private int _fullscreenState = 0;
 
-        private Rectangle selectSound;
-        private int soundState = 0;
+        private Rectangle _selectSound;
+        private int _soundState = 0;
 
-        private Rectangle selectMusic;
-        private Rectangle selectEffects;
+        private Rectangle _selectMusic;
+        private Rectangle _selectEffects;
 
-        private Rectangle backButtonRectangle;
+        private Rectangle _backButtonRectangle;
         private Texture2D backButtonImage;
         private Texture2D backButtonHoverImage;
 
@@ -68,10 +68,10 @@ namespace RaceGameBase
 
         public Options()
         {
-            selectFullscreen = new Rectangle(650, 90, 15, 15);
-            selectSound = new Rectangle(650, 120, 15, 15);
-            selectMusic = new Rectangle(650, 150, 15, 15);
-            selectEffects = new Rectangle(650, 180, 15, 15);
+            _selectFullscreen = new Rectangle(650, 90, 15, 15);
+            _selectSound = new Rectangle(650, 120, 15, 15);
+            _selectMusic = new Rectangle(650, 150, 15, 15);
+            _selectEffects = new Rectangle(650, 180, 15, 15);
 
             player1LeftRectangle = new Rectangle(650, 265, 80, 20);
             player1RightRectangle = new Rectangle(650, 295, 80, 20);
@@ -107,7 +107,7 @@ namespace RaceGameBase
             backButtonImage = Content.Load<Texture2D>("Menu/back");
             backButtonHoverImage = Content.Load<Texture2D>("Menu/back_h");
 
-            backButtonRectangle = new Rectangle(120, 250, backButtonImage.Width, backButtonImage.Height);
+            _backButtonRectangle = new Rectangle(120, 250, backButtonImage.Width, backButtonImage.Height);
 
             optionPanel = Content.Load<Texture2D>("Menu/optionpanel");
             check = Content.Load<Texture2D>("Menu/check");
@@ -123,7 +123,7 @@ namespace RaceGameBase
             currentMouseState = Mouse.GetState();
 
             //checkt als backbutton wordt ingedrukt
-            if (backButtonRectangle.Intersects(new Rectangle(Mouse.GetState().X, Mouse.GetState().Y, 1, 1)))
+            if (_backButtonRectangle.Intersects(new Rectangle(Mouse.GetState().X, Mouse.GetState().Y, 1, 1)))
             {
                 backButtonHover = true;
                 if (currentMouseState.LeftButton == ButtonState.Released && lastMouseState.LeftButton == ButtonState.Pressed)
@@ -133,9 +133,9 @@ namespace RaceGameBase
                 backButtonHover = false;
 
             //fullscreen check
-            if (selectFullscreen.Intersects(new Rectangle(Mouse.GetState().X, Mouse.GetState().Y, 1, 1)))
+            if (_selectFullscreen.Intersects(new Rectangle(Mouse.GetState().X, Mouse.GetState().Y, 1, 1)))
             {
-                fullscreenState = 1;
+                _fullscreenState = 1;
                 if (currentMouseState.LeftButton == ButtonState.Released && lastMouseState.LeftButton == ButtonState.Pressed)
                 {
                     Game.graphics.ToggleFullScreen();
@@ -146,15 +146,15 @@ namespace RaceGameBase
             else
             {
                 if (Game.graphics.IsFullScreen)
-                    fullscreenState = 2;
+                    _fullscreenState = 2;
                 else
-                    fullscreenState = 0;
+                    _fullscreenState = 0;
             }
 
             //sound check
-            if (selectSound.Intersects(new Rectangle(Mouse.GetState().X, Mouse.GetState().Y, 1, 1)))
+            if (_selectSound.Intersects(new Rectangle(Mouse.GetState().X, Mouse.GetState().Y, 1, 1)))
             {
-                soundState = 1;
+                _soundState = 1;
                 if (currentMouseState.LeftButton == ButtonState.Released && lastMouseState.LeftButton == ButtonState.Pressed)
                 {
                     if (MediaPlayer.State == MediaState.Playing)
@@ -172,9 +172,9 @@ namespace RaceGameBase
             else
             {
                 if (MediaPlayer.State == MediaState.Playing)
-                    soundState = 2;
+                    _soundState = 2;
                 else
-                    soundState = 0;
+                    _soundState = 0;
             }
 
             if (selected == false && lastMouseState.LeftButton == ButtonState.Pressed && currentMouseState.LeftButton == ButtonState.Released)
@@ -209,32 +209,32 @@ namespace RaceGameBase
             
             //teken achtergrond, logo, panel
             Menu.DrawBasics();
-            Game.spriteBatch.Draw(optionPanel, new Rectangle(backButtonRectangle.X + backButtonRectangle.Width + 1, 35, optionPanel.Width, optionPanel.Height), Color.White);
+            Game.spriteBatch.Draw(optionPanel, new Rectangle(_backButtonRectangle.X + _backButtonRectangle.Width + 1, 35, optionPanel.Width, optionPanel.Height), Color.White);
 
             //teken back button
             if(backButtonHover == false)
-                Game.spriteBatch.Draw(backButtonImage, backButtonRectangle, Color.White);
+                Game.spriteBatch.Draw(backButtonImage, _backButtonRectangle, Color.White);
             else
-                Game.spriteBatch.Draw(backButtonHoverImage, backButtonRectangle, Color.White);
+                Game.spriteBatch.Draw(backButtonHoverImage, _backButtonRectangle, Color.White);
 
             //teken fullscreen checkbox
-            if (fullscreenState == 0)
-                Game.spriteBatch.Draw(check, selectFullscreen, Color.White);
-            else if (fullscreenState == 1)
-                Game.spriteBatch.Draw(checkHover, selectFullscreen, Color.White);
+            if (_fullscreenState == 0)
+                Game.spriteBatch.Draw(check, _selectFullscreen, Color.White);
+            else if (_fullscreenState == 1)
+                Game.spriteBatch.Draw(checkHover, _selectFullscreen, Color.White);
             else
-                Game.spriteBatch.Draw(checkChecked, selectFullscreen, Color.White);
+                Game.spriteBatch.Draw(checkChecked, _selectFullscreen, Color.White);
             
             //teken sound checkbox
-            if (soundState == 0)
-                Game.spriteBatch.Draw(check, selectSound, Color.White);
-            else if (soundState == 1)
-                Game.spriteBatch.Draw(checkHover, selectSound, Color.White);
+            if (_soundState == 0)
+                Game.spriteBatch.Draw(check, _selectSound, Color.White);
+            else if (_soundState == 1)
+                Game.spriteBatch.Draw(checkHover, _selectSound, Color.White);
             else
-                Game.spriteBatch.Draw(checkChecked, selectSound, Color.White);
+                Game.spriteBatch.Draw(checkChecked, _selectSound, Color.White);
 
-            Game.spriteBatch.Draw(checkHover, selectMusic, Color.White);
-            Game.spriteBatch.Draw(checkHover, selectEffects, Color.White);
+            Game.spriteBatch.Draw(checkHover, _selectMusic, Color.White);
+            Game.spriteBatch.Draw(checkHover, _selectEffects, Color.White);
 
             //Teken de KeyBoxes
             player1LeftKeyBox.Draw();

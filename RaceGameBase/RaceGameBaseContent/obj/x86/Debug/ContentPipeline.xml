@@ -229,6 +229,33 @@
       <Time>2013-10-16T17:40:09.1279116+02:00</Time>
     </Item>
     <Item>
+      <Source>Menu\Lobby\ai_h.png</Source>
+      <Name>Menu\Lobby\ai_h</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\Lobby\ai_h.xnb</Output>
+      <Time>2013-10-17T16:59:19.2768346+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\Lobby\Cars\bmw.png</Source>
+      <Name>Menu\Lobby\Cars\bmw</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\Lobby\Cars\bmw.xnb</Output>
+      <Time>2013-10-16T18:47:13.3822539+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\Lobby\Cars\lambor.png</Source>
+      <Name>Menu\Lobby\Cars\lambor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\Lobby\Cars\lambor.xnb</Output>
+      <Time>2013-10-16T18:47:13.3842553+02:00</Time>
+    </Item>
+    <Item>
       <Source>Menu\Lobby\delete.png</Source>
       <Name>Menu\Lobby\delete</Name>
       <Importer>TextureImporter</Importer>
@@ -254,6 +281,15 @@
       <Options>None</Options>
       <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\Lobby\delete_h.xnb</Output>
       <Time>2013-10-16T17:40:09.144924+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\Lobby\keyboard_h.png</Source>
+      <Name>Menu\Lobby\keyboard_h</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\Lobby\keyboard_h.xnb</Output>
+      <Time>2013-10-17T16:56:36.1305751+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\Lobby\lobbypanel.png</Source>
@@ -301,22 +337,49 @@
       <Time>2013-10-16T18:19:19.0016351+02:00</Time>
     </Item>
     <Item>
-      <Source>Menu\Lobby\Cars\bmw.png</Source>
-      <Name>Menu\Lobby\Cars\bmw</Name>
+      <Source>Menu\Lobby\textbox2.png</Source>
+      <Name>Menu\Lobby\textbox2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\Lobby\Cars\bmw.xnb</Output>
-      <Time>2013-10-16T18:47:13.3822539+02:00</Time>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\Lobby\textbox2.xnb</Output>
+      <Time>2013-10-17T11:06:32.961205+02:00</Time>
     </Item>
     <Item>
-      <Source>Menu\Lobby\Cars\lambor.png</Source>
-      <Name>Menu\Lobby\Cars\lambor</Name>
+      <Source>Menu\Lobby\textbox2_h.png</Source>
+      <Name>Menu\Lobby\textbox2_h</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\Lobby\Cars\lambor.xnb</Output>
-      <Time>2013-10-16T18:47:13.3842553+02:00</Time>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\Lobby\textbox2_h.xnb</Output>
+      <Time>2013-10-17T11:06:32.9652081+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\Lobby\warning.png</Source>
+      <Name>Menu\Lobby\warning</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\Lobby\warning.xnb</Output>
+      <Time>2013-10-17T18:25:20.6215273+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\Lobby\xbox_h.png</Source>
+      <Name>Menu\Lobby\xbox_h</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\Lobby\xbox_h.xnb</Output>
+      <Time>2013-10-17T16:58:14.6615322+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\Lobby\start_c.png</Source>
+      <Name>Menu\Lobby\start_c</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\niels\Documents\GitHub\RaceGame\RaceGameBase\RaceGameBase\bin\x86\Debug\Content\Menu\Lobby\start_c.xnb</Output>
+      <Time>2013-10-17T19:38:52.6422429+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
