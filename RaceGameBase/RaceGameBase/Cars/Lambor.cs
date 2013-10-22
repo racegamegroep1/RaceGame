@@ -5,7 +5,11 @@ using System.Text;
 
 namespace RaceGameBase.Cars
 {
-    class Lambor : Car
+    public class Lambor : Car
     {
+        public Lambor(int Health) : base(Health)
+        {
+
+        }
     }
 }

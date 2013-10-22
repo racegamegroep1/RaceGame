@@ -244,12 +244,12 @@ namespace RaceGameBase
                 _controlWarning = true;
             else
             {
-                Car c = new Car();
+                Car c = new Car(100);
 
                 switch (_carPreviewIndex)
                 {
-                    case 0: c = new BMW(); break;
-                    case 1: c = new Lambor(); break;
+                    case 0: c = new BMW(100); break;
+                    case 1: c = new Lambor(100); break;
                 }
 
                 Player p = new Player(_usernameTextBox.Text, c, _selectedIndex, Player.GetInputId(Player.Players, 1));

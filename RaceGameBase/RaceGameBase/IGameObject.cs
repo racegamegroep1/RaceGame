@@ -8,10 +8,10 @@ namespace RaceGameBase
 {
     public interface IGameObject
     {
-        Vector2 Position { get; set; }
-        float Rotation { get; set; }
+        //Vector2 Position { get; set; }
+        //float Rotation { get; set; }
 
-        void Draw();
-        void Update();
+        //void Draw();
+        //void Update();
     }
 }
